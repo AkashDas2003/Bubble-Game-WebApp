@@ -29,7 +29,7 @@ function validateGuess(guess) {
     alert("Please enter a number less than 100");
   } else {
     prevGuess.push(guess);
-    if (countGuesses >= 11) {
+    if (countGuesses == 10) {
       displayGuess(guess);
       displayMessage(`Game Over. Your random number was ${randomNumber}`);
       endGame();
